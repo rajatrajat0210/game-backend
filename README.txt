@@ -8,8 +8,7 @@ It uses PostgreSQL as the database and includes APIs to register players, submit
 DELIVERABLES
 -----------------------------------------------------------
 ✔ Working JAR file: located at /build/libs/game-service.jar  
-✔ SQL file to create and seed the local DB: game_service_full.sql  
-✔ Postman Collection for regression tests  
+✔ SQL file to create and seed the local DB: game_service_full.sql   
 ✔ GitHub repo: https://github.com/rajatrajat0210/game-backend
 
 -----------------------------------------------------------
@@ -125,8 +124,7 @@ NOTES
 
 📌 Use the included SQL file to quickly recreate the database.
 
-📌 Clear data using: if needed!
-> TRUNCATE TABLE progression_rewards_collected, progression, player RESTART IDENTITY CASCADE;
+📌 Clear data if Needed !
 
 -----------------------------------------------------------
 AUTHOR
