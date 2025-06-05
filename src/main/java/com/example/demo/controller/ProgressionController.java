@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+// Routing for managing player progressions
+// This controller handles saving, updating, and retrieving player progressions
 @RestController
 @RequestMapping("/progressions")
 public class ProgressionController {
@@ -32,12 +34,14 @@ public class ProgressionController {
 
     // Get all progressions
     @GetMapping
+    // Retrieve all player progressions
     public List<Progression> getAllProgressions() {
         return progressionRepository.findAll();
     }
 
     // Get progressions by player id
     @GetMapping("/player/{playerId}")
+    // Retrieve all progressions for a specific player
     public List<Progression> getProgressionsByPlayer(@PathVariable Long playerId) {
         return progressionRepository.findByPlayerId(playerId);
     }

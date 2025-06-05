@@ -31,12 +31,14 @@ public class PlayerController {
 
     // Get player by id
     @GetMapping("/{id}")
+    // Retrieve a player by their ID
     public Optional<Player> getPlayerById(@PathVariable Long id) {
         return playerRepository.findById(id);
     }
 
     // Update player info
     @PutMapping("/{id}")
+    // Update player details by ID
     public Player updatePlayer(@PathVariable Long id, @RequestBody Player playerDetails) {
         Player player = playerRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Player not found"));

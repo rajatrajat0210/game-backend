@@ -22,6 +22,7 @@ public class GameEventController {
     // Schedule (Create) a new event
     @CacheEvict(value = "availableEvents", allEntries = true)
     @PostMapping("/schedule")
+    // Schedule a new game event
     public GameEvent scheduleEvent(@RequestBody GameEvent event) {
         return gameEventRepository.save(event);
     }
@@ -29,6 +30,7 @@ public class GameEventController {
     // Update an existing event
     @CacheEvict(value = "availableEvents", allEntries = true)
     @PutMapping("/update/{id}")
+    // Update an existing event by ID
     public ResponseEntity<GameEvent> updateEvent(@PathVariable Long id, @RequestBody GameEvent updatedEvent) {
         return gameEventRepository.findById(id)
                 .map(event -> {

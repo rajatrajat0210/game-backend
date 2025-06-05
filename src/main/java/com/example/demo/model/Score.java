@@ -3,6 +3,8 @@ package com.example.demo.model;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+
+// Entity class for storing game scores
 @Entity
 public class Score {
 

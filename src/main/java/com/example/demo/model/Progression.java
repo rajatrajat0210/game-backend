@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
+// entity class for player progression in the game
 @Entity
 public class Progression {
 

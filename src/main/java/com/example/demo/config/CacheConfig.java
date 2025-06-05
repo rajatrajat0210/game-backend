@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.concurrent.TimeUnit;
-
+// caching configuration for the application using Caffeine cache
 @Configuration
 @EnableCaching
 public class CacheConfig {
@@ -21,6 +21,8 @@ public class CacheConfig {
     }
 
     @Bean
+    // CacheManager bean to manage caches
+    // This CacheManager uses Caffeine as the underlying cache implementation
     public CacheManager cacheManager(Caffeine<Object, Object> caffeine) {
         CaffeineCacheManager cacheManager = new CaffeineCacheManager("availableEvents","topGlobalScores","topScoresByGame","topScoresByCountryAndGame");
         cacheManager.setCaffeine(caffeine);
