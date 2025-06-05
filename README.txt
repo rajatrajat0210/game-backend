@@ -10,7 +10,7 @@ DELIVERABLES
 ✔ Working JAR file: located at /build/libs/game-service.jar  
 ✔ SQL file to create and seed the local DB: game_service_full.sql  
 ✔ Postman Collection for regression tests  
-✔ GitHub repo: [Insert GitHub link here]
+✔ GitHub repo: https://github.com/rajatrajat0210/game-backend
 
 -----------------------------------------------------------
 TECHNOLOGIES USED
