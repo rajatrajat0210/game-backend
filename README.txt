@@ -53,7 +53,7 @@ spring.jpa.hibernate.ddl-auto=none
 
 4. BUILD AND RUN:
 ---------------------------------
-> ./gradlew build  
+> ./gradlew build  (MACOS) --- gradlew.bat build (Windows)
 > java -jar build/libs/game-backend-0.0.1-SNAPSHOT.jar 
 
 App will run at: http://localhost:8080
